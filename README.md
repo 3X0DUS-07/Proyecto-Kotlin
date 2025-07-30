@@ -91,7 +91,7 @@ HelloWorld/
 ## Tecnologías utilizadas
 
 - Kotlin 1.9+
-- IntelliJ IDEA (recomendado)
+- IntelliJ IDEA
 - JVM
 
 ---
