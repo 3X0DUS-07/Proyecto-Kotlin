@@ -1,13 +1,14 @@
-# Kotlin - Gestor de Información Personal
 
-Aplicación de consola en Kotlin para registrar y analizar información personal de usuarios. Ideal para practicar fundamentos como variables, tipos de datos, operadores y manipulación de cadenas.
+# Kotlin - Gestor de Información Personal (versión sin ciclos)
+
+Aplicación de consola en Kotlin para registrar y analizar información personal de usuarios. Ideal para practicar fundamentos como variables, tipos de datos, operadores y manipulación de cadenas, **sin el uso de ciclos (`for`, `while`, `do-while`)**.
 
 ---
 
 ## Funcionalidades
 
-- Registro de 3 usuarios.
-- Validaciones de edad, altura, peso y correo electrónico.
+- Registro manual de 3 usuarios (sin ciclos).
+- Entrada básica de edad, altura, peso y correo electrónico.
 - Cálculo de IMC (Índice de Masa Corporal).
 - Clasificación del IMC según categorías de salud.
 - Verificación de mayoría de edad.
@@ -32,12 +33,12 @@ Donde:
 
 ### Clasificación del IMC
 
-| IMC | Clasificación |
-|-----|----------------|
-| < 18.5 | Bajo peso |
-| 18.5 – 24.9 | Peso normal |
-| 25 – 29.9 | Sobrepeso |
-| 30 o más | Obesidad |
+| IMC         | Clasificación  |
+|-------------|----------------|
+| < 18.5      | Bajo peso      |
+| 18.5 – 24.9 | Peso normal    |
+| 25 – 29.9   | Sobrepeso      |
+| 30 o más    | Obesidad       |
 
 ---
 
@@ -81,10 +82,10 @@ HelloWorld/
 ## Requisitos cumplidos
 
 - Variables y tipos de datos
-- Operadores aritméticos, lógicos y relacionales
-- Validaciones de datos de entrada
+- Operadores aritméticos y relacionales
 - Manipulación de cadenas
 - Presentación clara en consola
+- Proyecto estructurado sin uso de ciclos (`for`, `while`, `do-while`)
 
 ---
 
@@ -99,7 +100,7 @@ HelloWorld/
 ## Instrucciones para ejecutar
 
 1. Clona este repositorio:
-   ```
+   ```bash
    git clone https://github.com/3X0DUS-07/Proyecto-Kotlin.git
    ```
 2. Abre el proyecto con IntelliJ IDEA o ejecuta `main.kt` desde consola con Kotlin instalado.
@@ -109,6 +110,5 @@ HelloWorld/
 
 ## Autor
 
-Desarrollado por: Yohusseff Caffella
-
-Proyecto académico para práctica con Kotlin.
+Desarrollado por: Yohusseff Caffella  
+Proyecto académico para práctica con Kotlin sin ciclos.

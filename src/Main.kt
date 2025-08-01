@@ -43,35 +43,23 @@ fun crearResumen(user: User): String {
 
 fun validarEmail(email: String): Boolean = email.contains("@") && email.contains(".")
 
-fun solicitarUsuario(scanner: Scanner): User {
+fun solicitarUsuarioManual(scanner: Scanner): User {
     println("=== Registro de Usuario ===")
 
     print("Nombre completo: ")
     val nombre = scanner.nextLine()
 
-    var edad: Int
-    do {
-        print("Edad: ")
-        edad = scanner.nextLine().toIntOrNull() ?: -1
-    } while (edad <= 0)
+    print("Edad: ")
+    val edad = scanner.nextLine().toIntOrNull() ?: 0
 
-    var altura: Double
-    do {
-        print("Altura (m): ")
-        altura = scanner.nextLine().toDoubleOrNull() ?: -1.0
-    } while (altura <= 0)
+    print("Altura (m): ")
+    val altura = scanner.nextLine().toDoubleOrNull() ?: 0.0
 
-    var peso: Double
-    do {
-        print("Peso (kg): ")
-        peso = scanner.nextLine().toDoubleOrNull() ?: -1.0
-    } while (peso <= 0)
+    print("Peso (kg): ")
+    val peso = scanner.nextLine().toDoubleOrNull() ?: 0.0
 
-    var email: String
-    do {
-        print("Email: ")
-        email = scanner.nextLine()
-    } while (!validarEmail(email))
+    print("Email: ")
+    val email = scanner.nextLine()
 
     print("Ciudad de residencia: ")
     val ciudad = scanner.nextLine()
@@ -81,20 +69,27 @@ fun solicitarUsuario(scanner: Scanner): User {
 
 fun main() {
     val scanner = Scanner(System.`in`)
-    val usuarios = mutableListOf<User>()
-
     println("Bienvenido al Gestor de Información Personal\n")
 
-    for (i in 1..3) {
-        println("\nRegistro del usuario $i:")
-        usuarios.add(solicitarUsuario(scanner))
-    }
+    println("Registro del usuario 1:")
+    val user1 = solicitarUsuarioManual(scanner)
 
-    println("\n=== Información de Usuarios ===")
-    usuarios.forEachIndexed { index, user ->
-        println("\nUsuario ${index + 1}")
-        println(crearResumen(user))
-    }
+    println("\nRegistro del usuario 2:")
+    val user2 = solicitarUsuarioManual(scanner)
+
+    println("\nRegistro del usuario 3:")
+    val user3 = solicitarUsuarioManual(scanner)
+
+    println("\n=== Información de Usuarios ===\n")
+
+    println("Usuario 1")
+    println(crearResumen(user1))
+
+    println("\nUsuario 2")
+    println(crearResumen(user2))
+
+    println("\nUsuario 3")
+    println(crearResumen(user3))
 
     println("\nGracias por usar el programa.")
 }
