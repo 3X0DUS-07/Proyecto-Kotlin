@@ -85,7 +85,6 @@ HelloWorld/
 - Operadores aritméticos y relacionales
 - Manipulación de cadenas
 - Presentación clara en consola
-- Proyecto estructurado sin uso de ciclos (`for`, `while`, `do-while`)
 
 ---
 
