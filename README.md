@@ -1,13 +1,13 @@
 
 # Kotlin - Gestor de Información Personal (versión sin ciclos)
 
-Aplicación de consola en Kotlin para registrar y analizar información personal de usuarios. Ideal para practicar fundamentos como variables, tipos de datos, operadores y manipulación de cadenas, **sin el uso de ciclos (`for`, `while`, `do-while`)**.
+Aplicación de consola en Kotlin para registrar y analizar información personal de usuarios. Ideal para practicar fundamentos como variables, tipos de datos, operadores y manipulación de cadenas.
 
 ---
 
 ## Funcionalidades
 
-- Registro manual de 3 usuarios (sin ciclos).
+- Registro manual de 3 usuarios.
 - Entrada básica de edad, altura, peso y correo electrónico.
 - Cálculo de IMC (Índice de Masa Corporal).
 - Clasificación del IMC según categorías de salud.
