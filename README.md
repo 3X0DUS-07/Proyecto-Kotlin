@@ -111,4 +111,4 @@ HelloWorld/
 ## Autor
 
 Desarrollado por: Yohusseff Caffella  
-Proyecto académico para práctica con Kotlin sin ciclos.
+Proyecto académico para práctica con Kotlin.
