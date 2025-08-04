@@ -1,5 +1,5 @@
 
-# Kotlin - Gestor de Información Personal (versión sin ciclos)
+# Kotlin - Gestor de Información Personal
 
 Aplicación de consola en Kotlin para registrar y analizar información personal de usuarios. Ideal para practicar fundamentos como variables, tipos de datos, operadores y manipulación de cadenas.
 
